@@ -1,0 +1,39 @@
+"""""""""""""""""""""""""""""""
+"                             " 
+"      GENERAL OPTIONS        "
+"                             "
+"""""""""""""""""""""""""""""""
+set nocompatible                    " Set compatibility to Vim only
+set rnu                             " Set relative line numbers
+set nobackup                        " Set no backup files
+set noswapfile                       " Set no swap files
+set ruler                           " Shows line, column # of cursor
+set visualbell			            " Shows blinking cursor for error
+set wrap			                " Sets automatic text wrap
+set wildmode=list:longest,full      " Tab completion levels
+set shiftwidth=4                    " Number of spaces for indentation
+set tabstop=4                       " Width for tab character
+set cursorline 			            " Highlights the line with cursor
+set hidden
+
+syntax off
+colorscheme retrobox
+
+
+"""""""""""""""""""""""""""""""
+"                             "
+"         Key Mappings        "
+"                             "
+"""""""""""""""""""""""""""""""
+
+let mapleader=","
+
+
+"""""""""""""""""""""""""""""""
+"                             "
+"           REMAPS            "
+"                             "
+"""""""""""""""""""""""""""""""
+nnoremap <c-s> :w<cr>
+inoremap jj <esc>
+
