@@ -262,11 +262,33 @@ fi
 alias cl='clear'
 alias tm='tmux'
 alias el='exit'
+alias chry='cherrytree'
+alias burp='burpsuite'
 
 # DOTFILES aliases
 alias tms='tmux source-file ~/.tmux.conf'
-alias cpzf='cp ~/.zshrc ~/.config/dotfiles'
-alias cptf='cp ~/.tmux.conf ~/.config/dotfiles'
-alias cpvf='cp ~/.vim/vimrc ~/.config/dotfiles'
+alias cpzf='cp ~/.zshrc ~/.config/DOTFILES'
+alias cptf='cp ~/.tmux.conf ~/.config/DOTFILES'
+alias cpvf='cp ~/.vim/vimrc ~/.config/DOTFILES'
 
+# Math Conversions
+# Convert to binary
+alias oct2bin='f() { echo "obase=2; ibase=8; $1" | bc; unset -f f; }; f'
+alias dec2bin='f() { echo "obase=2; ibase=10; $1" | bc; unset -f f; }; f'
+alias hex2bin='f() { echo "ibase=16; obase=2; ${1#0x}" | bc; }; f'
+
+# Convert to Octal
+alias bin2oct='f() { echo "obase=8; ibase=2; $1" | bc; unset -f f; }; f'
+alias dec2oct='f() { echo "obase=8; ibase=10; $1" | bc; unset -f f; }; f'
+alias hex2oct='f() { echo "ibase=16; obase=8; ${1#0x}" | bc; }; f'
+
+# Convery to Decimal
+alias bin2dec='f() { echo "obase=10; ibase=2; $1" | bc; unset -f f; }; f'
+alias oct2dec='f() { echo "obase=10; ibase=8; $1" | bc; unset -f f; }; f'
+alias hex2dec='f() { echo "$((16#${1#0x}))" }; f'
+
+# Convert to Hexadecimal
+alias bin2hex='f() { echo "obase=16; ibase=2; $1" | bc; unset -f f; }; f'
+alias oct2hex='f() { echo "obase=16; ibase=8; $1" | bc; unset -f f; }; f'
+alias dec2hex='f() { echo "obase=16; ibase=10; $1" | bc; unset -f f; }; f'
 
