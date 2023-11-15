@@ -292,3 +292,6 @@ alias bin2hex='f() { echo "obase=16; ibase=2; $1" | bc; unset -f f; }; f'
 alias oct2hex='f() { echo "obase=16; ibase=8; $1" | bc; unset -f f; }; f'
 alias dec2hex='f() { echo "obase=16; ibase=10; $1" | bc; unset -f f; }; f'
 
+# Convert Decimal to ASCII
+alias dec2asc='printf "\\$(printf '%o' 110)"'
+
