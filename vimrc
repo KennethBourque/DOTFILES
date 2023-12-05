@@ -18,11 +18,15 @@ set wildmode=list:longest,full
 set expandtab 
 set shiftwidth=4                   
 set tabstop=4
+set softtabstop=4
+set smartindent
+set expandtab
 set autoindent
 set cursorline 			        
 set hidden
 set scrolloff=7
 set wildmenu
+set backspace=indent,eol,start
 
 """""""""""""""""""""""""""""""
 "                             "
@@ -30,6 +34,12 @@ set wildmenu
 "                             "
 """""""""""""""""""""""""""""""
 let mapleader=","
+"""""""""""""""""""""""""""""""
+"                             "
+"
+"                             "
+"""""""""""""""""""""""""""""""
+let $RC="$HOME/.vim/vimrc"
 
 """""""""""""""""""""""""""""""
 "                             "
