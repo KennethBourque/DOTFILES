@@ -4,7 +4,7 @@
 "                             "
 """""""""""""""""""""""""""""""
 syntax on
-colorscheme evening
+colorscheme murphy
 
 set nocompatible                    
 set rnu                             
