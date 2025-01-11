@@ -97,7 +97,7 @@ configure_prompt() {
     #[ "$EUID" -eq 0 ] && prompt_symbol=💀
     case "$PROMPT_ALTERNATIVE" in
         twoline)
-            PROMPT=$'%F{%(#.blue.green)}┌─[%{%B%F{blue}%*%F{reset}%}%b%F{green}]──${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n'$prompt_symbol$'%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%5~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{green}>)%b%F{reset} '
+            PROMPT=$'%F{yellow}┌─[%{%B%F{blue}%*%F{reset}%}%b%F{yellow}]──${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n'$prompt_symbol$'%m%b%F{yellow})-[%F{magenta}%(6~.%-1~/…/%5~.%5~)%b%F{yellow}]\n└─%B%(#.%F{red}#.%F{yellow}>)%b%F{reset} '
             # Right-side prompt with exit codes and background processes
             #RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
             ;;
